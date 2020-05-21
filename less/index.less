@@ -56,7 +56,8 @@ table {
 html, body {
     height: 100%;
 }
-@radius: 60%;
+@font:'Lobster', cursive;
+
 @style: 3px solid pink;
 
 
@@ -80,23 +81,31 @@ html, body {
   padding: 5px;
   display: inline-flex;
   border-radius: 10px;
-  color: black;
+  color: cornflowerblue;
   text-decoration: none;
   margin-bottom: 10px;
   background: peachpuff;
+  font-family: @font;
 }
 
 .h2-font {
-  font-size: 1em;
-  font-family: fantasy;
-  font-weight: 100em;
-  color: pink;
+  font-size: 1.5em;
+  font-family: @font;
+  font-style: normal; 
+  font-variant: normal;
+  font-weight: 400; 
+  line-height: 20px;
+  color: plum
 }
 
 .p-font {
-	font-size: .5em;
-	font-family: Papyrus, fantasy; font-size: 14px; font-style: normal; 
-	font-variant: normal; font-weight: 400; line-height: 20px;
+  font-family: @font;
+  font-size: 14px; 
+  font-style: normal; 
+  font-variant: normal;
+  font-weight: 400; 
+  line-height: 20px;
+  color: palevioletred
 }
 .mobile{
   @media(max-width: 500px){
@@ -131,13 +140,14 @@ html, body {
      }
   }
     h1 {
-      margin-left: 6em;
-      margin-top: 3em;
-		  font-size: 2em;
-		  font-family: fantasy;
-		  font-weight: 200;
-		  color: pink;
-	    width: 30%;
+      margin-left: 4em;
+      margin-top: 2em;
+		  font-size: 3em;
+      font-family: @font;
+      font-weight: 400; 
+      line-height: 20px;
+      width: 40%;
+      color:pink;
 	}
 
     nav {
@@ -160,8 +170,9 @@ html, body {
 
   	h2 {
      width: 30%;
-	 .h2-font();
-	 margin-top: 4em;
+	   .h2-font();
+     margin-top: 2em;
+     margin-right: .5em;
   }
 
   
@@ -182,8 +193,9 @@ html, body {
   
   h2 {
     width: 30%;
-	.h2-font();
-	margin-top: 4em;
+    .h2-font();
+    margin-top: 2em;
+    margin-right: .5em;
   }
 
   ul {
@@ -202,8 +214,9 @@ html, body {
   
   h2 {
     width: 30%;
-	.h2-font();
-	margin-top: 2em;;
+    .h2-font();
+    margin-top: .5em;
+    margin-right: .5em;
   }
   
   ul {
@@ -217,14 +230,15 @@ html, body {
   .box(); 
   .border();
   margin-left: 20em;
-  background-color: hotpink;
+  background-color: honeydew;
   .mobile();
   
-  h2{
-    width:30%;
-	.h2-font();
-	margin-top: 1em;
-	
+    h2{
+    width: 30%;
+    .h2-font();
+    margin-top: .5em;
+    margin-right: .5em;
+    margin-bottom: .5em;
   }
   
   ul{
@@ -247,10 +261,11 @@ html, body {
     }
 
     }
-  }
+  
 
 
     
 
 
 
+  }

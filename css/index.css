@@ -134,9 +134,18 @@ html,
 body {
   height: 100%;
 }
+.border {
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border: 2px double aliceblue;
+  margin: 2em;
+  justify-content: center;
+}
 .box {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   margin-left: 1em;
 }
@@ -158,19 +167,25 @@ body {
   font-weight: 100em;
   color: pink;
 }
+.p-font {
+  font-size: 0.5em;
+  font-family: Papyrus, fantasy;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
 .container {
   width: 800px;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-left: 1em;
   border: 3px solid pink;
+  background-image: url(https://i.picsum.photos/id/1019/5472/3648.jpg);
 }
 .container header {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   margin-left: 1em;
 }
@@ -184,9 +199,10 @@ body {
 .container header nav {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   margin-left: 1em;
+  margin: 1em;
 }
 .container header nav a {
   width: 10%;
@@ -201,11 +217,19 @@ body {
   background: peachpuff;
 }
 .container .about {
-  width: 100%;
+  width: 50%;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   margin-left: 1em;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border: 2px double aliceblue;
+  margin: 2em;
+  justify-content: center;
+  background-color: oldlace;
 }
 .container .about h2 {
   width: 30%;
@@ -213,16 +237,36 @@ body {
   font-family: fantasy;
   font-weight: 100em;
   color: pink;
+  margin-top: 4em;
+}
+.container .about img {
+  border-radius: 50;
 }
 .container .about p {
-  width: 70%;
+  width: 50%;
+  font-size: 0.5em;
+  font-family: Papyrus, fantasy;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 .container .skills {
-  width: 100%;
+  width: 50%;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   margin-left: 1em;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border: 2px double aliceblue;
+  margin: 2em;
+  justify-content: center;
+  margin-left: 20em;
+  background-color: lavenderblush;
 }
 .container .skills h2 {
   width: 30%;
@@ -230,16 +274,32 @@ body {
   font-family: fantasy;
   font-weight: 100em;
   color: pink;
+  margin-top: 4em;
 }
-.container .skills p {
-  width: 70%;
+.container .skills ul {
+  width: 50%;
+  font-size: 0.5em;
+  font-family: Papyrus, fantasy;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 .container .work {
-  width: 100%;
+  width: 50%;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   margin-left: 1em;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border: 2px double aliceblue;
+  margin: 2em;
+  justify-content: center;
+  background-color: gainsboro;
 }
 .container .work h2 {
   width: 30%;
@@ -247,16 +307,33 @@ body {
   font-family: fantasy;
   font-weight: 100em;
   color: pink;
+  margin-top: 2em;
 }
-.container .work p {
-  width: 70%;
+.container .work ul {
+  width: 50%;
+  font-size: 0.5em;
+  font-family: Papyrus, fantasy;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 .container .contact {
-  width: 100%;
+  width: 50%;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   margin-left: 1em;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border: 2px double aliceblue;
+  margin: 2em;
+  justify-content: center;
+  margin-left: 20em;
+  background-color: hotpink;
 }
 .container .contact h2 {
   width: 30%;
@@ -264,16 +341,24 @@ body {
   font-family: fantasy;
   font-weight: 100em;
   color: pink;
+  margin-top: 1em;
 }
-.container .contact p {
-  width: 70%;
+.container .contact ul {
+  width: 50%;
+  font-size: 0.5em;
+  font-family: Papyrus, fantasy;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 .container .footer {
   width: 100%;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-left: 1em;
 }
 .container .footer nav {
   width: 100%;

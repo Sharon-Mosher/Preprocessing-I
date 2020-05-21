@@ -56,14 +56,22 @@ table {
 html, body {
     height: 100%;
 }
-
+@radius: 50px;
 @style: 3px solid pink;
 @mobile: ~"only screen and (max-width: 500px)";
 
-
+.border {
+	border-top-right-radius: @radius * 2;
+	border-top-left-radius: @radius * 2;
+	border-bottom-left-radius: @radius * 3;
+	border-bottom-right-radius: @radius * 3;
+	border: 2px double aliceblue;
+	margin:2em;
+	justify-content: center;
+  }
 .box {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   margin-left: 1em;
 }
@@ -88,15 +96,22 @@ html, body {
   color: pink;
 }
 
+.p-font {
+	font-size: .5em;
+	font-family: Papyrus, fantasy; font-size: 14px; font-style: normal; 
+	font-variant: normal; font-weight: 400; line-height: 20px;
+}
+
 .container {
   width: 800px;
   margin: auto;
-  .box();
   border: @style;
+  background-image: url(https://i.picsum.photos/id/1019/5472/3648.jpg);
+
 
   header {
-    width: 100%;
-    .box();
+	width: 100%;
+	.box();
 
     h1 {
 		font-size: 2em;
@@ -108,7 +123,8 @@ html, body {
 
     nav {
       width: 100%;
-      .box();
+	  .box();
+	  margin:1em;
 
       a {
         .button();
@@ -117,66 +133,86 @@ html, body {
   }
 
 .about {
-  width: 100%;
+  width: 50%;
   .box();
+  .border();
+  background-color: oldlace;
+
 
   h2 {
     width: 30%;
-    .h2-font();
+	.h2-font();
+	margin-top: 4em;
+  }
+
+  img {
+	  border-radius: 50;
   }
   p {
-    width: 70%;
+	width: 50%;
+	.p-font();
   }
 }
 
 .skills {
-  width: 100%;
+  width: 50%;
   .box();
+  .border();
+  margin-left: 20em;
+  background-color: lavenderblush;
   
   h2 {
     width: 30%;
-    .h2-font();
+	.h2-font();
+	margin-top: 4em;
   }
 
-  p {
-    width: 70%;
+  ul {
+	width: 50%;
+	.p-font();
   }
 }
 
 .work {
-  width: 100%;
+  width: 50%;
   .box();
+  .border();
+  background-color: gainsboro;
   
   h2 {
     width: 30%;
-    .h2-font();
+	.h2-font();
+	margin-top: 2em;;
   }
   
-  p {
-    width:70%;
-       
+  ul {
+	width:50%; 
+	.p-font();
   }
 }
 .contact {
-  width: 100%;
+  width: 50%;
   .box(); 
+  .border();
+  margin-left: 20em;
+  background-color: hotpink;
   
   h2{
     width:30%;
-    .h2-font();
+	.h2-font();
+	margin-top: 1em;
+	
   }
   
-  p{
-    width:70%;
+  ul{
+	width:50%;
+	.p-font();
   }
 }
 
 .footer{
     width: 100%;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-between;
-	align-items: center;
+	.box();
   
     nav {
 	  width: 100%;

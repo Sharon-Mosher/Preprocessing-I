@@ -107,6 +107,18 @@ html, body {
   line-height: 20px;
   color: palevioletred
 }
+
+.column {
+  float:center;
+  width: 33.33%;
+}
+
+.row:after{
+  content:"";
+  display:table;
+  clear: both;
+}
+
 .mobile{
   @media(max-width: 500px){
          width: 97%;
@@ -125,7 +137,7 @@ html, body {
   width: 800px;
   margin: auto;
   border: @style;
-  background-image: url(https://i.picsum.photos/id/1019/5472/3648.jpg);
+  background-color: darkslategrey;
   .mobile();
 
   header {
@@ -148,18 +160,27 @@ html, body {
       line-height: 20px;
       width: 40%;
       color:pink;
-	}
-
-    nav {
-      width: 100%;
-	  .box();
-	  margin:1em;
-
-      a {
-        .button();
-      }
+  }
+    h2{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      margin-left: 1em;
+      color: pink;
+      font-size: 2rem;
+      font-family: @font;
     }
 
+    nav {
+    width: 100%;
+	  .box();
+    
+      a {
+        display: flex;
+        .button();
+        justify-content: center;
+      }
+    }
 
   .about {
     width: 50%;
@@ -174,7 +195,6 @@ html, body {
      margin-top: 2em;
      margin-right: .5em;
   }
-
   
   p {
 	width: 50%;
@@ -252,6 +272,7 @@ html, body {
     width: 100%;
 	.box();
   .mobile();
+
     nav {
 	  width: 100%;
 
@@ -262,10 +283,69 @@ html, body {
 
     }
   
+    .projects{ 
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-around;
+      margin-top: 1em;
+      margin-left: 3em;
+     
+      .portfolio{
+        display: flex;
+        flex-direction: column;
+        margin-right: 7.5rem;
+        
+        button{
+          width:40%;
+          align-self: center;
+          color: pink;
+          background-color: slategray;
+          font-family: @font;
+          font-size: 1rem;
+        }
+      }
 
+      .resume{
+        display: flex;
+        flex-direction: column;
 
-    
+        button{
+          width:40%;
+          align-self: center;
+          color: pink;
+          background-color: slategray;
+          font-family: @font;
+          font-size: 1rem;
+        }
+      }
 
+      .build-week{
+        display: flex;
+        flex-direction: column;
 
+        button{
+          width:40%;
+          align-self: center;
+          color: pink;
+          background-color: slategray;
+          font-family: @font;
+          font-size: 1rem;
+        }
+      }
+      
+     .pictures{
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 2rem;
+      
+      img{
+        margin: 1em;
 
-  }
+       
+      }
+    }
+  
+}
+}

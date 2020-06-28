@@ -176,6 +176,15 @@ body {
   line-height: 20px;
   color: palevioletred;
 }
+.column {
+  float: center;
+  width: 33.33%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 @media (max-width: 500px) {
   .mobile {
     width: 97%;
@@ -193,7 +202,7 @@ body {
   width: 800px;
   margin: auto;
   border: 3px solid pink;
-  background-image: url(https://i.picsum.photos/id/1019/5472/3648.jpg);
+  background-color: darkslategrey;
 }
 @media (max-width: 500px) {
   .container {
@@ -246,15 +255,24 @@ body {
   width: 40%;
   color: pink;
 }
+.container h2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-left: 1em;
+  color: pink;
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
+}
 .container nav {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   margin-left: 1em;
-  margin: 1em;
 }
 .container nav a {
+  display: flex;
   width: 10%;
   margin: 0;
   border: 3px solid powderblue;
@@ -266,6 +284,7 @@ body {
   margin-bottom: 10px;
   background: peachpuff;
   font-family: 'Lobster', cursive;
+  justify-content: center;
 }
 .container .about {
   width: 50%;
@@ -541,4 +560,58 @@ body {
   margin-bottom: 10px;
   background: peachpuff;
   font-family: 'Lobster', cursive;
+}
+.container .projects {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  margin-top: 1em;
+  margin-left: 3em;
+}
+.container .projects .portfolio {
+  display: flex;
+  flex-direction: column;
+  margin-right: 7.5rem;
+}
+.container .projects .portfolio button {
+  width: 40%;
+  align-self: center;
+  color: pink;
+  background-color: slategray;
+  font-family: 'Lobster', cursive;
+  font-size: 1rem;
+}
+.container .projects .resume {
+  display: flex;
+  flex-direction: column;
+}
+.container .projects .resume button {
+  width: 40%;
+  align-self: center;
+  color: pink;
+  background-color: slategray;
+  font-family: 'Lobster', cursive;
+  font-size: 1rem;
+}
+.container .projects .build-week {
+  display: flex;
+  flex-direction: column;
+}
+.container .projects .build-week button {
+  width: 40%;
+  align-self: center;
+  color: pink;
+  background-color: slategray;
+  font-family: 'Lobster', cursive;
+  font-size: 1rem;
+}
+.container .projects .pictures {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 2rem;
+}
+.container .projects .pictures img {
+  margin: 1em;
 }

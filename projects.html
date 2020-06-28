@@ -7,7 +7,7 @@
 
   <title>My Resume</title>
 
-  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
@@ -23,22 +23,31 @@
 
       <h1>Sharon Mosher</h1>
 
-      <h2>Projects</h2>
-
       <nav>
         <a href="index.html">Home</a>
         <a href="#">About</a>
         <a href="projects.html">Projects</a>
         <a href="#">Contact</a>
       </nav>
-
     </header>
-     <p> CLICK THE PICTURE TO VIEW IN GITHUB</p>
-      <nav class= "examples"></nav>
-        <a href="https://github.com/Sharon-Mosher/User-Interface-II/commit/47798f4abbd7efbce4f5e306f0159fb50b2a04bc">
-          <img src="portfolio site.png" alt="website" width="200" height="100">
-        </a> 
-        <a href="https://github.com/Sharon-Mosher/Preprocessing-I/pull/1/commits/eb06ae860214a6274c1a5b7b7fdcab415d064a16">
-          <img src="resume project.png" alt="website" width="200" height="100">
-        </a> 
+         
+     <div class="projects">
+      <h2> My Projects </h2>
+      <nav class= "pictures">
+        <div class= "portfolio">
+          <img src="portfolio site.png" alt="portfolio" width="200">
+          <button onclick="window.location.href= 'https://github.com/Sharon-Mosher/User-Interface-II';">Github </button>
+        </div>
+        <div class= "resume">
+          <img src="resume project.png" alt="resume" width="200">
+          <button onclick="window.location.href= 'https://github.com/Sharon-Mosher/Preprocessing-I';">Github </button>
+        </div>
+        <div class= "build-week">
+          <img src="build-week-1.png" alt="build week" width="200">
+          <button onclick="window.location.href= 'https://github.com/bw-co-make-1/ui';">Github </button>
+        </div>  
+      </nav>
+  </div>
+     </section>
+
       </nav>

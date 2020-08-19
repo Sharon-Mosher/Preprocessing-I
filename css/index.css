@@ -607,6 +607,18 @@ body {
   font-family: 'Lobster', cursive;
   font-size: 1rem;
 }
+.container .projects .single-page-app {
+  display: flex;
+  flex-direction: column;
+}
+.container .projects .single-page-app button {
+  width: 40%;
+  align-self: center;
+  color: pink;
+  background-color: slategray;
+  font-family: 'Lobster', cursive;
+  font-size: 1rem;
+}
 .container .projects .pictures {
   display: flex;
   flex-wrap: wrap;

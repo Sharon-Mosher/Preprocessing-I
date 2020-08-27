@@ -601,13 +601,12 @@ body {
   margin-right: 7.5rem;
 }
 .container .projects .build-week button {
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-around;
-  margin-top: 1em;
-  margin-left: 3em;
+  width: 40%;
+  align-self: center;
+  color: pink;
+  background-color: slategray;
+  font-family: 'Lobster', cursive;
+  font-size: 1rem;
 }
 .container .projects .single-page-app {
   display: flex;
@@ -620,7 +619,6 @@ body {
   background-color: slategray;
   font-family: 'Lobster', cursive;
   font-size: 1rem;
-  margin-right: 7.5rem;
 }
 .container .projects .pictures {
   display: flex;

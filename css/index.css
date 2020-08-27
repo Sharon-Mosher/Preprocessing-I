@@ -618,6 +618,7 @@ body {
   background-color: slategray;
   font-family: 'Lobster', cursive;
   font-size: 1rem;
+  margin-right: 7.5rem;
 }
 .container .projects .pictures {
   display: flex;

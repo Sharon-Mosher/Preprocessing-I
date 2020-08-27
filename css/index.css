@@ -598,6 +598,7 @@ body {
 .container .projects .build-week {
   display: flex;
   flex-direction: column;
+  margin-right: 7.5rem;
 }
 .container .projects .build-week button {
   width: 40%;
